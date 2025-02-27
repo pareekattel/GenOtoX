@@ -14,5 +14,10 @@ component {
 
     public void function dashboard() {
         // Dashboard logic here
+        fw.pageTitle = "Dashboard";
+    }
+
+    public void function login() {
+        fw.pageTitle = "Login";
     }
 }

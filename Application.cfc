@@ -1,5 +1,5 @@
 component extends="framework.one.Application" {
-    this.name = "YourProject";
+    this.name = "GenOtoX";
     this.applicationTimeout = createTimeSpan(0, 2, 0, 0); // 2 hours
     this.sessionManagement = true;
     this.sessionTimeout = createTimeSpan(0, 1, 0, 0); // 1 hour
@@ -10,8 +10,8 @@ component extends="framework.one.Application" {
         variables.framework = {
             defaultSection = "main",
             defaultItem = "login",
-            applicationKey = "YourProject",
-            applicationTitle = "Your Project Title",
+            applicationKey = "GenOtoX",
+            pageTitle = "Generation Old to X",
             homeURL = "main.dashboard",
             loginURL = "main.login"
         };
