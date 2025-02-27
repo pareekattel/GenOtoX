@@ -1,4 +1,4 @@
-component extends="framework.one.Application" {
+component extends="framework.one" {
     this.name = "GenOtoX";
     this.applicationTimeout = createTimeSpan(0, 2, 0, 0); // 2 hours
     this.sessionManagement = true;
