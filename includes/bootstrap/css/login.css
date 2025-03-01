@@ -2,11 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    /*background: linear-gradient(90deg, #c85e45, #ca77bc, #5cb1f8);*/
+    background: -webkit-linear-gradient(90deg, #031159,#120a38);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(90deg, #031159,#120a38);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .login-form {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
     width: 30vw;
+    background-color: aliceblue;
+    /*background: linear-gradient(90deg, #c85e45, #ca77bc, #5cb1f8);*/
+}
+
+.custom-btn {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 1.2;
 }
