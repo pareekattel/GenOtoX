@@ -25,4 +25,8 @@ component {
     public void function login() {
         rc.pageTitle = "Login";
     }
+
+    public void function signup() {
+        rc.pageTitle = "Sign Up";
+    }
 }

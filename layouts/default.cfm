@@ -5,6 +5,9 @@
          <meta charset="UTF-8">
          <title>#rc.pageTitle#</title>
          <link rel="stylesheet" href="includes/bootstrap/css/bootstrap.min.css">
+         <cfif structKeyExists(rc, "currentPageCSSFile") AND rc.currentPageCSSFile NEQ "">
+            <link rel="stylesheet" href="includes/bootstrap/css/#rc.currentPageCSSFile#">
+         </cfif>
       </head>
       <body>
          #body#
