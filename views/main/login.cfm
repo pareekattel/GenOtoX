@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col">
             <form class="login-form" action="index.cfm?action=main.loginAction" method="post">
-                <cfif structKeyExists(session, "userMessage") AND session.userMessage NEQ ""><h6 style="color:#000"><cfoutput>#session.userMessage#</cfoutput></h6>
+                <cfif structKeyExists(session, "userMessage") AND session.userMessage NEQ ""><h6 style="color:#000;text-align:center;"><cfoutput>#session.userMessage#</cfoutput></h6>
                     <cfset structDelete(session, "userMessage") />
                 </cfif>
                 <h3 class="text-center">Login</h3>

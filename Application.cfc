@@ -4,10 +4,20 @@ component extends=framework.one {
     this.sessionManagement = true;
     this.sessionTimeout = createTimeSpan(0, 1, 0, 0); // 1 hour
     this.setClientCookies = true;
-
-    /*public void function setupApplication() {
-        // Configure the application
-            variables.framework = {
+    variables.framework = {
+        defaultSection: "main",
+        defaultItem: "login",
+        error: "main.error",
+        diEngine: "di1"
+        /*routes: [
+            { "/" = "/main/login" }
+        ]*/
+    };
+    
+    public void function setupApplication() {       
+        
+        /*// Configure the application
+           variables.framework = {
             action = "action",
             usingSubsystems = false,
             defaultSubsystem = "",
@@ -40,10 +50,10 @@ component extends=framework.one {
             applicationKey = "GenOtoX",
             homeURL = "main.dashboard",
             loginURL = "main.login"
-        };
+        };*/
 
         // Register your security service
         variables.framework.services.security = "model.security";
-    }*/
+    }
    
 }

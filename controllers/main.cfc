@@ -14,7 +14,7 @@ component {
             session.userMessage = "Welcome #form.username#";
             variables.fw.redirect(action="main.dashboard");
         } else {
-            session.userMessage = "User Name does not exist. Please try again.";
+            session.userMessage = "Invalid credentials. Please try again.";
             variables.fw.redirect(action="main.login");
         }
     }
